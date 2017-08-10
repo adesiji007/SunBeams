@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FC38399-B78D-453B-AA32-BCE42F74973C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SunBeams</RootNamespace>
+    <AssemblyName>SunBeams</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivityRecord.Designer.cs">
+      <DependentUpon>ActivityRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic_Movement_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dynamic_Movement_Screen.Designer.cs">
+      <DependentUpon>Dynamic_Movement_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fitness_Training_Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fitness_Training_Video.Designer.cs">
+      <DependentUpon>Fitness_Training_Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forget_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forget_Password.Designer.cs">
+      <DependentUpon>Forget_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Injury_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Injury_History.Designer.cs">
+      <DependentUpon>Injury_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInPage.Designer.cs">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messanger.cs" />
+    <Compile Include="Messanger.Designer.cs">
+      <DependentUpon>Messanger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUser.Designer.cs">
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reffered_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reffered_Form.Designer.cs">
+      <DependentUpon>Reffered_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Static_Postural_Assessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Static_Postural_Assessment.Designer.cs">
+      <DependentUpon>Static_Postural_Assessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainee_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainee_Information.Designer.cs">
+      <DependentUpon>Trainee_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Training_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training_History.Designer.cs">
+      <DependentUpon>Training_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Training_Week.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training_Week.Designer.cs">
+      <DependentUpon>Training_Week.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video_Clips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video_Clips.Designer.cs">
+      <DependentUpon>Video_Clips.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActivityRecord.resx">
+      <DependentUpon>ActivityRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dynamic_Movement_Screen.resx">
+      <DependentUpon>Dynamic_Movement_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fitness_Training_Video.resx">
+      <DependentUpon>Fitness_Training_Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forget_Password.resx">
+      <DependentUpon>Forget_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Injury_History.resx">
+      <DependentUpon>Injury_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInPage.resx">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messanger.resx">
+      <DependentUpon>Messanger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUser.resx">
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reffered_Form.resx">
+      <DependentUpon>Reffered_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Static_Postural_Assessment.resx">
+      <DependentUpon>Static_Postural_Assessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainee_Information.resx">
+      <DependentUpon>Trainee_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training_History.resx">
+      <DependentUpon>Training_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training_Week.resx">
+      <DependentUpon>Training_Week.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video_Clips.resx">
+      <DependentUpon>Video_Clips.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+    <Folder Include="NewFolder2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
